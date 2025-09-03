@@ -3,8 +3,8 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 
 # Replace with the actual file path
-csv_file = 'file.csv'
-parquet_file = 'file.parquet'
+csv_file = 'SAU-GLOBAL-1-v48-0.csv'
+parquet_file = 'converted-SAU-GLOBAL-1-v48-0.csv.parquet'  # suffix doesn't matter in here, only convenient for humans
 
 # Read the CSV file into a Pandas DataFrame
 df = pd.read_csv(csv_file)
