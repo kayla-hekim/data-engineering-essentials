@@ -9,12 +9,13 @@ def connect():
         con = duckdb.connect(database=':memory:', read_only=False)
 
         # Create a persistent MySQL secret
+        # making secret available - nickname rds
         con.execute(f"""
         CREATE PERSISTENT SECRET rds (
             TYPE mysql,
             HOST 'db1.cqee4iwdcaph.us-east-1.rds.amazonaws.com',
             PORT 3306,
-            DATABASE 'nem2p',
+            DATABASE 'rkf9wd',
             USER 'admin',
             PASSWORD '{RDS_PASSWORD}'
         );
